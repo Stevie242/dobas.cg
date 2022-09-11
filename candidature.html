@@ -30,7 +30,7 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-dob-link link-dob-dark dropdown-toggle px-2" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Oriantation
+                            Orientation
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./filiere-ecole.html">Ecole & Filière</a></li>
@@ -118,7 +118,8 @@
                     <hr>
                     <div>
                         <label for="matricule" class="visually-hidden">Matricule</label>
-                        <input type="text" class="form-control" id="matricule" placeholder="Veuillez saisir votre matricule">
+                        <input type="text" class="form-control" id="matricule"
+                            placeholder="Veuillez saisir votre matricule">
                     </div>
                     <div class="d-flex justify-content-center">
                         <button type="submit" class="btn btn-dob-primary">
@@ -132,6 +133,103 @@
         <!-- Rubrique postuler pour une bourse -->
         <div class="tab-pane fade mt-3" id="pills-profile" role="tabpanel" aria-labelledby="pills-postuler"
             tabindex="0">
+            <div class="post-form w-100 m-auto">
+                <form class="row g-3" action="" method="get">
+                    <div class="d-flex justify-content-center">
+                        <h3 class="text-dob-color-red">Information personnelle</h3>
+                    </div>
+                    <hr>
+                    <div class="col-sm-12 col-md-12 text-center">
+                        <div>
+                            <img src="./img/user.png" alt="photo-identité" width="148px" height="148px">
+                        </div>
+                        <div>
+                            <label for="photoIdentite" class="btn btn-color-cg com-a">Ajouter une photo</label>
+                            <input type="file" name="photoIdentite" id="photoIdentite" class="d-none">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="nom" class="col-cg-green visually-hidden">Nom</label>
+                        <input type="text" class="form-control" id="nom" placeholder="Veuillez saisir votre Nom">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="prenom" class="col-cg-green visually-hidden">Prénom</label>
+                        <input type="text" class="form-control" id="prenom" placeholder="Veuillez saisir votre Prénom">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="DateNaissance" class="col-cg-green visually-hidden">Date de naissance</label>
+                        <input type="date" class="form-control" id="DateNaissance">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="genre" class="col-cg-green visually-hidden">Genre</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Selectionner votre genre</option>
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="ville" class="col-cg-green visually-hidden">Ville</label>
+                        <input type="text" class="form-control" id="ville" placeholder="Veuillez saisir votre Ville">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="adresse" class="col-cg-green visually-hidden">Adresse</label>
+                        <input type="text" class="form-control" id="adresse" placeholder="Veuillez saisir votre adresse">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="e-mail" class="col-cg-green visually-hidden">E-mail</label>
+                        <input type="email" class="form-control" id="e-mail" placeholder="Veuillez saisir votre e-mail">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="telephone" class="col-cg-green visually-hidden">Téléphone <small>(Opérateur du congo
+                                uniquement!)</small></label>
+                        <input type="tel" class="form-control" id="telephone"
+                            pattern="[0]{1}[4-6]{1}[0-9]{3}[0-9]{2}[0-9]{2}"
+                            placeholder="Veuillez saisir votre numéro (Exemple: 069009090)">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="text-dob-color-red">Pieces à fournir</h3>
+                    </div>
+                    <hr>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="demande-METP" class="col-cg-green">Demande adressée à Monsieur le METP</label>
+                        <input type="file" class="form-control" id="demande-METP" aria-describedby="inputGroupFileAddon04"
+                            aria-label="Upload">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="releveNote" class="col-cg-green">Relevé de notes du baccalauréat technique
+                            légalisé</label>
+                        <input type="file" class="form-control" id="releveNote" aria-describedby="inputGroupFileAddon04"
+                            aria-label="Upload">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="acteNaissance" class="col-cg-green">Acte de naissance <small>(En
+                                couleur)</small></label>
+                        <input type="file" class="form-control" id="acteNaissance" aria-describedby="inputGroupFileAddon04"
+                            aria-label="Upload">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="certificatMedical" class="col-cg-green">Certificat médical</label>
+                        <input type="file" class="form-control" id="certificatMedical"
+                            aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="certificatNationalite" class="col-cg-green">Certificat de nationalité</label>
+                        <input type="file" class="form-control" id="certificatNationalite"
+                            aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <label for="casierJudiciaire" class="col-cg-green">Casier judiciaire</label>
+                        <input type="file" class="form-control" id="casierJudiciaire"
+                            aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h3 class="text-dob-color-red">Fiche d'orientation</h3>
+                    </div>
+                    <hr>
+                    
+                </form>
+            </div>
             <!-- <form action="" class="row g-3">
                 <div class="col-12 text-center text-uppercase col-cg-green">
                     <h2>Information personnelle</h2>
@@ -317,7 +415,7 @@
                         <li class="nav-item mb-2"><a href="./index.html"
                                 class="nav-dob-item link-dob-dark p-0">Accueil</a></li>
                         <li class="nav-item mb-2"><a href="./orientation.html"
-                                class="nav-dob-item link-dob-dark p-0">Oriantation</a></li>
+                                class="nav-dob-item link-dob-dark p-0">Orientation</a></li>
                         <li class="nav-item mb-2"><a href="./bourse.html"
                                 class="nav-dob-item link-dob-dark p-0">Bourse</a></li>
                         <li class="nav-item mb-2"><a href="./candidature.html"

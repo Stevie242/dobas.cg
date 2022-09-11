@@ -268,3 +268,9 @@ position: relative;
   max-width: 500px;
   padding: 1rem 1rem;
 }
+
+/* Postuler formulaire */
+.post-form{
+  max-width: 1000px;
+  padding: 1rem 1rem;
+}
