@@ -261,3 +261,10 @@ body {
 justify-content: center;
 position: relative;
 }
+
+/* Authentification matricule */
+
+.auth{
+  max-width: 500px;
+  padding: 1rem 1rem;
+}
