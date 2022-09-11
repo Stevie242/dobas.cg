@@ -74,6 +74,32 @@
     </header>
     <!--./Banner-->
 
+    <!-- breadcrumbs -->
+    <div class="container py-3">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" class="link-dob-green">Accueil</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Candidature</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- ./breadcrumbs -->
+
+    <!-- Choix rubrique -->
+    <ul class="nav nav-pills center mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link-dob me-2 active" id="pills-authentification" data-bs-toggle="pill"
+            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+            aria-selected="true">Vérifier sa candidature</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link-dob me-2" id="pills-postuler" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Postuler pour une
+            bourse</button>
+        </li>
+      </ul>
+    <!-- /Choix rubrique -->
 
     <!-- Modal connexion -->
     <div class="modal fade" id="connexionModal" tabindex="-1" aria-labelledby="connexionLabel" aria-hidden="true">

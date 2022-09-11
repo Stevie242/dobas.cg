@@ -218,3 +218,46 @@ body {
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
+
+
+
+/* Nav-pills */
+.nav-pills .nav-link-dob.active, .nav-pills .show > .nav-link{
+  color: #8DCDAA;
+  background-color: #009041;
+}
+
+.nav-link-dob {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-pills .nav-link-dob {
+  background: none;
+    background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  border-radius: 0.25rem;
+}
+
+.nav-link-dob:hover, .nav-link:focus{
+  color: #009041;
+}
+
+
+.nav-link-dob.active:hover{
+  color: #fff;
+  background-color: #2bd075;
+  border-color: #2bd075;
+}
+
+.nav-link-dob{
+  color: #000;
+}
+
+.rubrique .center {
+justify-content: center;
+position: relative;
+}
