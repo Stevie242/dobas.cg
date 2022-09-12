@@ -89,6 +89,21 @@
     </div>
     <!-- ./breadcrumbs -->
 
+    <!-- Jumbotron -->
+    <div class="container">
+        <div class="p-5 mb-4 bg-dob-green-inverse rounded-3">
+            <div class="container-fluid py-5 text-dob-color-green">
+                <h3 class="display-5 fw-bold">Candidature</h3>
+                <p class="col-md-8 fs-4">
+                    Vérifier l'état de votre candidature ou postuler pour avoir une bourse.
+                </p>
+                <button class="btn btn-dob-primary btn-lg" type="button">Plus de details</button>
+            </div>
+        </div>
+    </div>
+    <!-- ./Jumbotron -->
+
+
     <!-- Choix rubrique -->
     <div class="d-flex justify-content-center">
         <ul class="nav nav-pills center mb-3" id="pills-tab" role="tablist">
@@ -174,7 +189,8 @@
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <label for="adresse" class="col-cg-green visually-hidden">Adresse</label>
-                        <input type="text" class="form-control" id="adresse" placeholder="Veuillez saisir votre adresse">
+                        <input type="text" class="form-control" id="adresse"
+                            placeholder="Veuillez saisir votre adresse">
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <label for="e-mail" class="col-cg-green visually-hidden">E-mail</label>
@@ -192,9 +208,8 @@
                     </div>
                     <hr>
                     <div class="col-sm-12 col-md-6">
-                        <label for="demande-METP" class="col-cg-green">Demande adressée à Monsieur le METP</label>
-                        <input type="file" class="form-control" id="demande-METP" aria-describedby="inputGroupFileAddon04"
-                            aria-label="Upload">
+                        <label for="demande-METP" class="col-cg-green">Demande adressée à Monsieur le METP
+                        </label>
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <label for="releveNote" class="col-cg-green">Relevé de notes du baccalauréat technique
@@ -205,8 +220,8 @@
                     <div class="col-sm-12 col-md-6">
                         <label for="acteNaissance" class="col-cg-green">Acte de naissance <small>(En
                                 couleur)</small></label>
-                        <input type="file" class="form-control" id="acteNaissance" aria-describedby="inputGroupFileAddon04"
-                            aria-label="Upload">
+                        <input type="file" class="form-control" id="acteNaissance"
+                            aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <label for="certificatMedical" class="col-cg-green">Certificat médical</label>
@@ -227,7 +242,11 @@
                         <h3 class="text-dob-color-red">Fiche d'orientation</h3>
                     </div>
                     <hr>
-                    
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-dob-primary">
+                            <i class="bi bi-send"></i> Postuler
+                        </button>
+                    </div>
                 </form>
             </div>
             <!-- <form action="" class="row g-3">

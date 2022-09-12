@@ -8,6 +8,7 @@ body {
     background-color: rgb(253, 245, 245);
 }
 
+
 .title {
     font-family: benmono;
     font-weight: 700;
@@ -273,4 +274,13 @@ position: relative;
 .post-form{
   max-width: 1000px;
   padding: 1rem 1rem;
+}
+
+/* FAQs */
+.faqs a{
+  color: #000;
+}
+
+.faqs a:hover{
+  color: #d07b1a;
 }
