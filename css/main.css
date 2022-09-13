@@ -224,7 +224,7 @@ body {
 
 /* Nav-pills */
 .nav-pills .nav-link-dob.active, .nav-pills .show > .nav-link{
-  color: #8DCDAA;
+  color: #fff;
   background-color: #009041;
 }
 
