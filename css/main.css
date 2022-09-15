@@ -152,16 +152,18 @@ body {
 
 /* custom style */
 
-.home-testimonial{
+/* .home-testimonial{
   background-color: #047b3a;
-  height: 380px
+  height: 380px;
 }
+
+
 .home-testimonial-bottom{
   background-color: rgb(244, 244, 244);
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   margin-top: 20px;
   margin-bottom: 0px;position: relative;height: 130px;
-  top: 190px
+  top: 190px;
 }
 .home-testimonial h3{
   color: var(--orange);
@@ -208,7 +210,7 @@ body {
   font-family: "Montserrat", Sans-serif;
   font-size: 12px;
   color: #6c83a2
-}
+} */
 
 
 /* Modal */
@@ -283,4 +285,82 @@ position: relative;
 
 .faqs a:hover{
   color: #d07b1a;
+}
+
+
+/* New testimonial */
+.demo{ background: #C6E6D4 !important; }
+.testimonial{
+    margin: 40px 20px 40px;
+}
+.testimonial .testimonial-content{
+    padding: 35px 25px 35px 50px;
+    margin-bottom: 35px;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    position: relative;
+}
+.testimonial .testimonial-content:after{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    position: absolute;
+    bottom: -10px;
+    left: 22px;
+    transform: rotate(45deg);
+}
+.testimonial-content .testimonial-icon{
+    width: 50px;
+    height: 45px;
+    background: #ff4242;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    line-height: 42px;
+    position: absolute;
+    top: 37px;
+    left: -19px;
+}
+.testimonial-content .testimonial-icon:before{
+    content: "";
+    border-bottom: 16px solid #e41212;
+    border-left: 18px solid transparent;
+    position: absolute;
+    top: -16px;
+    left: 1px;
+}
+.testimonial .description{
+    font-size: 15px;
+    font-style: italic;
+    color: #8a8a8a;
+    line-height: 23px;
+    margin: 0;
+}
+.testimonial .title{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #037838;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+}
+.testimonial .post{
+    display: block;
+    font-size: 14px;
+    color: #D31933;
+}
+.owl-theme .owl-controls{
+    margin-top: 20px;
+}
+.owl-theme .owl-controls .owl-page span{
+    background: #ccc;
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #037838;
 }

@@ -10,6 +10,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./vendors/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="./vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -105,7 +108,8 @@
                 <div class="container">
                     <div class="carousel-caption">
                         <h1 class="text-dob-color-red">BOURSE DU CONGO BRAZZAVILLE</h1>
-                        <p class="text-dob-green-inverse">Ce portail donne accès aux informations relatives aux aides et subventions accordées </p>
+                        <p class="text-dob-green-inverse">Ce portail donne accès aux informations relatives aux aides et
+                            subventions accordées </p>
                         <p><a class="btn btn-lg btn-dob-primary" href="bourse-locale.html">Apprenez plus</a></p>
                     </div>
                 </div>
@@ -236,7 +240,7 @@
     </div>
 
     <!-- testimoniale-->
-    <section class="home-testimonial mt-5">
+    <!-- <section class="home-testimonial mt-5">
         <div class="container-fluid">
             <div class="row d-flex justify-content-center testimonial-pos">
                 <div class="col-md-12 d-flex justify-content-center">
@@ -246,7 +250,7 @@
             <section class="home-testimonial-bottom">
                 <div class="container testimonial-inner">
                     <div class="row d-flex justify-content-center">
-                        <div class="col-md-4 style-3">
+                        <div class="col-md-4 style-3 mb-3">
                             <div class="tour-item ">
                                 <div class="tour-desc bg-white">
                                     <div class="tour-text color-grey-3 text-center">&ldquo;Je suis béneficière de la bourse
@@ -262,7 +266,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 style-3">
+                        <div class="col-md-4 style-3 mb-3">
                             <div class="tour-item ">
                                 <div class="tour-desc bg-white">
                                     <div class="tour-text color-grey-3 text-center">&ldquo;J'ai eu la chance de faire mon 
@@ -296,11 +300,69 @@
                         </div>
                     </div>
             </section>
-    </section>
+    </section> -->
     <!--./testimoniale-->
 
+    <!-- Testimoniale V-2 -->
+    <div class="demo mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center text-dob-color-green mt-5">
+                    <h2>Témoignage des étudiants qui ont réussi leur parcours avec la DOBAS</h2>
+                </div>
+                <div class="col-md-12">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit
+                                    amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                </p>
+                            </div>
+                            <h3 class="title">williamson</h3>
+                            <span class="post">Web Developer</span>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit
+                                    amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                </p>
+                            </div>
+                            <h3 class="title">Kristina</h3>
+                            <span class="post">Web Designer</span>
+                        </div>
+
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit
+                                    amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                </p>
+                            </div>
+                            <h3 class="title">williamson</h3>
+                            <span class="post">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Testimoniale V-2 -->
+
+
     <!-- contact -->
-    <div class="container mt-5">
+    <div class="container mt-4 ">
         <div class="row">
             <div>
                 <h2 class="text-dob-color-green mb-4">Contact</h2>
@@ -522,8 +584,27 @@
     <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#testimonial-slider").owlCarousel({
+                items: 3,
+                itemsDesktop: [1000, 3],
+                itemsDesktopSmall: [980, 2],
+                itemsTablet: [768, 2],
+                itemsMobile: [650, 1],
+                pagination: true,
+                navigation: false,
+                slideSpeed: 1000,
+                autoPlay: true
+            });
+        });
+    </script>
     <script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
