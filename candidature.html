@@ -155,8 +155,8 @@
                     </div>
                     <hr>
                     <div class="col-sm-12 col-md-12 text-center">
-                        <div>
-                            <img src="./img/user.png" alt="photo-identité" width="148px" height="148px">
+                        <div id="preview-picture">
+                            <img src="./img/user.png" alt="photo-identité" id="idPicture" width="148px" height="148px">
                         </div>
                         <div>
                             <label for="photoIdentite" class="btn btn-color-cg com-a">Ajouter une photo</label>
@@ -480,6 +480,21 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script> -->
     <script src="./vendors/bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+        const previewBtn =document.querySelector("#photoIdentite");
+        const uploadPicture =document.querySelector("#idPicture");
+        previewBtn.addEventListener("change",function(){
+            const file =this.files[0];
+            if(file){
+                const picture =new FileReader();
+                picture.onload=function(){
+                    const result = picture.result;
+                    uploadPicture.src =result;
+                }
+                picture.readAsDataURL(file);
+            }
+        })
+    </script>
     <script src="./js/main.js"></script>
 </body>
 
